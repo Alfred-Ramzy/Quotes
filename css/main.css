@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap');
+
+body {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* height: 100%; */
+}
+
+html {
+    overflow: hidden;
+    /* height: 100%; */
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    background: #59C173;
+    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+    height: 100vh;
+}
+
+h1 {
+    font-family: "Concert One", sans-serif;
+ 
+}
+
+.TheMainPart {
+    background-color: white;
+    border-radius: 15px;
+    width: 610px;
+    padding: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 700;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    font-family: "Poppins", serif;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+button:hover {
+    color: #e8e8e8;
+}
+
+button:hover::before {
+    width: 100%;
+}
+
+.iconaya {
+
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 8px;
+    border: 2px solid black;
+    transition: all 0.5s;
+}
+
+.iconaya:hover {
+    background-color: #212121;
+    color: white;
+}
+
+.LowerPart {
+    border-top: 1px solid #a29f9f;
+}
+
+.fa-quote-right-alt:before,
+.fa-quote-right:before {
+    content: "\f10e";
+    font-size: 30px;
+    font-weight: 800;
+    margin-right: 30px;
+    margin-left: 10px;
+
+}
+
+.fa-quote-left-alt:before,
+.fa-quote-left:before {
+    content: "\f10d";
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.author {
+    font-style: italic;
+    font-size: 17px;
+    font-family: "Shadows Into Light", cursive;
+}
+
+@media (max-width: 575.98px) {
+    .TheMainPart {
+        width: 365px;
+    }
+
+    .fa-quote-right-alt:before,
+    .fa-quote-right:before {
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+
+    .fa-quote-left-alt:before,
+    .fa-quote-left:before {
+        content: "\f10d";
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+    .TheMainPart {
+        width: 450px;
+    }
+        .fa-quote-right-alt:before,
+        .fa-quote-right:before {
+            margin-right: 30px;
+            margin-left: 10px;
+        }
+    
+        .fa-quote-left-alt:before,
+        .fa-quote-left:before {
+            content: "\f10d";
+            margin-left: 30px;
+            margin-right: 10px;
+        }
+}
+
+@media (min-width: 768px) {
+    .TheMainPart {
+        width: 610px;
+    }
+}
